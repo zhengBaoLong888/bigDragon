@@ -1,0 +1,82 @@
+#login_bg{
+	background-image: url(../img/login_bg.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	height: 100%;
+}
+#logo{
+	width: 206px;
+	margin: 0 auto;
+	padding-top: 150px;
+	padding-bottom: 190px;
+}
+.userPass input{
+	width: 476px;
+	height: 114px;
+	background-color: #596269;
+	color: #F1F1F1;
+	padding-left: 114px;
+	font-size: 28px;
+	background-position: 40px 50%;
+	background-repeat: no-repeat;
+	display: block;
+	border: none;
+}
+#user{
+	margin: 0 auto;
+	border-radius: 60px;
+	background-image: url(../img/zhanghu.png);
+	margin-bottom: 20px;
+}
+#passWord{
+	width: 258px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+	background-image: url(../img/password_img.png);
+}
+.forgotPassword{
+	width: 219px;
+	height: 114px;
+	background-color: #596269;
+	text-align: center;
+	line-height: 114px;
+	font-size: 28px;
+	margin-left: -1px;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+.forgotPassword #col_1{
+		color: #6A6A6A;
+}
+.forgotPassword #col_2{
+		color: #88B938;
+}
+.forgPasBox{
+	width: 590px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+}
+.btn-register{
+	width: 590px;
+	height: 100px;
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	line-height: 100px;
+	margin: 160px auto 80px;
+	background-image: url(../img/btn.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.explain{
+	text-align: center;
+	font-size: 22px;
+	color: #6A6A6A;
+	background-image: url(../img/duigou.png);
+	background-position: 24% 50%;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}

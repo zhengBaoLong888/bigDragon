@@ -1,0 +1,44 @@
+.main_input{
+	position: relative;
+	padding: 36px 0;
+	background-color: #292F36;
+	margin-bottom: 2px;
+}
+.main_input label{
+	margin-left: 40px;
+	color: #F1F1F1;
+	font-size: 28px;
+}
+.main_input input{
+	width: 224px;
+	margin-left: 100px;
+	background: none;
+	border: none;
+	font-size: 28px;
+	color: #6A6A6A;
+}
+#getCode{
+	position: absolute;
+	right: 40px;
+	top: 26px;
+	z-index: 10;
+	width:218px;
+	height:60px;
+	font-size:28px;
+	border-radius:10px;
+	font-size: 28px;
+	color: #96DA28;
+	border:1px solid rgba(150,218,40,1);
+}
+.btn-register{
+	width: 590px;
+	height: 100px;
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	line-height: 100px;
+	margin: 780px auto 40px;
+	background-image: url(../img/btn.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,80 @@
+#slider{
+	height: 330px;
+}
+.main{
+	width: calc(100% - 40px);
+	padding: 20px 40px;
+	background-color: #292F36;
+	border-radius:10px;
+	margin: 20px auto 0;
+}
+.active_title{
+	font-size: 48px;
+	color: #F1F1F1;
+}
+.activeContent{
+	display: flex;
+	justify-content: flex-start;
+}
+.activeContent span:first-child{
+	font-size: 28px;
+	color: #D8D8D8;
+	margin-right: 40px;
+}
+.activeContent{
+	margin-top: 22px;
+}
+.activeContent span+span{
+	width: 75%;
+	font-size: 28px;
+	color: #828282;
+}
+.row2_title{
+	font-size: 28px;
+	color: #D8D8D8;
+}
+.row3_describe{
+	margin-top: 20px;
+	font-size: 24px;
+	color: #828282;
+	line-height: 40px;
+	text-indent: 2em;
+}
+.labre_personnel{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+#preNumber{
+	color: #D8D8D8;
+	font-size: 28px;
+}
+.labre_personnel li{
+	width: 20%;
+	margin-bottom: 15px;
+}
+.labre_personnel li img{
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.labre_personnel li p{
+	text-align: center;
+	color: #828282;
+	font-size: 24px;
+	margin-top: 10px;
+}
+.btn-tj {
+    width: 590px;
+    height: 100px;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    line-height: 100px;
+    margin: 40px auto 40px;
+    background-image: url(../img/btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}

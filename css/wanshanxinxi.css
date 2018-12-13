@@ -1,0 +1,118 @@
+.upLoad{
+	width: 100%;
+	padding: 76px 0;
+	background-color: #292F36;
+}
+.portrait{
+	width: 176px;
+	height: 176px;
+	border:#fff solid 4px;
+	border-radius:50%;
+	margin: 0 auto;
+}
+#textClick{
+	text-align: center;
+	color: #444444;
+	font-size: 28px;
+	margin-top: 16px;
+}
+.main_row{
+	margin-top: 20px;
+}
+.main_row ul li,.main_row3{
+	padding: 32px 40px;
+	background-color: #292F36;
+	margin-bottom: 1px;
+}
+.main_row ul li,.main_row3{
+	position: relative;
+}
+.selectSex{
+	position: absolute;
+	right: 30px;
+	top:18px;
+	z-index: 10;
+}
+.selectSex span{
+	width: 98px;
+	height: 70px;
+	float: left;
+	font-size: 28px;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	border-radius:50px;
+	background-color: #20262D;
+}
+.selectSex span:first-child{
+	margin-right: 20px;
+}
+.main_row ul li label,.textTile{
+	color: #6A6A6A;
+	margin-right: 100px;
+}
+.main_row ul li input{
+	font-size: 28px;
+	width: 72%;
+	background: none;
+	border: 0;
+	color: #F1F1F1;
+}
+.content{
+	font-size: 28px;
+}
+.pkAction{
+	background-color: #88B938 !important;
+}
+.main_row4 li a{
+	color: #F1F1F1;
+}
+.main_row4 li,.main_row3{
+	color: #F1F1F1;
+	background-image: url(../img/youjiantou.png);
+	background-position: 92% 50%;
+	background-repeat: no-repeat;
+}
+.main_row3{
+	margin-top: 18px;
+}
+#demo2{
+	width: 60%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 11;
+	background: none;
+	border: 0;
+}
+.mui-dtpicker-title h5{
+	font-size: 26px !important;
+}
+.mui-pciker-list li{
+	font-size: 1.5pc !important;
+}
+.mui-dtpicker-header button{
+	font-size: 14pt !important;
+}
+#imghead{
+	width: 176px;
+	height: 176px;
+	border:#fff solid 4px;
+	border-radius:50%;
+	margin: 0 auto;
+}
+	
+.btn-tj{
+	width: 590px;
+    height: 100px;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    line-height: 100px;
+    margin: 40px auto 40px;
+    background-image: url(../img/btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    

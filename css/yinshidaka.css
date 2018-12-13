@@ -1,0 +1,52 @@
+.mui-table-view .mui-media, .mui-table-view .mui-media-body{
+	background-color: #292f36;
+}
+.mui-table-view .mui-media{
+	margin-top: 20px;
+}
+.mui-table-view-cell:after,.mui-table-view:after,.mui-table-view:before{
+	height: 0;
+}
+.main_bt{
+	color: #fff;
+}
+.mui-table-view .mui-media-object{
+	max-width: 118px;
+	height: 118px;
+	line-height: 118px;
+}
+.main_bt{
+	font-size: 32px;
+	margin-top: 10px;
+	display: block;
+}
+.mui-ellipsis{
+	font-size: 28px;
+	margin-top: 10px;
+	color: #6A6A6A;
+}
+.pobable{
+	background-image: url(../img/youjiantou.png);
+	background-position: 92% 50%;
+	background-repeat: no-repeat;
+}
+.mui-media-body{
+	width: 73%;
+}
+.btn-tj{
+	width: 590px;
+	height: 100px;
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+	left: 80px;
+	line-height: 100px;
+	background-image: url(../img/btn.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.marBon{
+	overflow-y: auto;
+}

@@ -1,0 +1,18 @@
+
+
+
+.brief{
+	position: relative;
+}
+.main_originator{
+	text-align: right;
+	color: #8fc338;
+	font-size: 28px;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	z-index: 10;
+}
+.main_originator p+p{
+	font-size: 18px;
+}

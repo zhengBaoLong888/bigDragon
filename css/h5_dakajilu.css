@@ -1,0 +1,29 @@
+
+.dateTime{
+	color: #AAAAAA;
+	font-size: 26px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+
+#tab_dataSelect{
+	margin-top: 20px;
+	background-color:#292F36;
+	padding: 32px 0 32px 42px;
+	font-size: 28px;
+	color: #fff;
+	background-image: url(../img/youjiantou.png);
+	background-position: 92% 50%;
+	background-repeat: no-repeat;
+}
+.title{
+	font-size: 24px !important;
+	position: absolute;
+	top: 0;
+	left: 42.5%;
+}
+.cancel,.title,.ensure{
+	font-size: 26px;
+}

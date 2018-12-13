@@ -1,0 +1,230 @@
+ body,
+ div,
+ dl,
+ dt,
+ dd,
+ ul,
+ ol,
+ li,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ pre,
+ code,
+ form,
+ fieldset,
+ legend,
+ input,
+ button,
+ textarea,
+ p,
+ blockquote,
+ th,
+ td {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style-type: none;
+ }
+ 
+
+ 
+ body {
+ 	height: 100%;
+ 	line-height: normal;
+ 	background-color: #20262d;
+ 	font-family:"苹方简体","微软雅黑", "华文细黑", "SimSun", "Arial Narrow";
+ }
+ a{
+ 	text-decoration: none;
+ 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+-webkit-user-select: none;
+-moz-user-focus: none;
+-moz-user-select: none;
+ }
+ input {
+ 	-webkit-appearance: none;
+ }
+ 
+ :focus {
+ 	outline: -webkit-focus-ring-color auto 0px;
+ }
+ 
+ input:-webkit-autofill {
+ 	background: none;
+ }
+ 
+ input::-webkit-input-placeholder {
+ 	color: #F1F1F1;
+ }
+ 
+ img {
+ 	display: block;
+ 	width: 100%;
+ }
+ 
+ .main_list_block {
+ 	padding: 25px 0;
+ 	background-color: #292f36;
+ 	border-radius: 20px;
+ 	margin-bottom: 15px;
+ }
+ 
+ .main_green {
+ 	width: 8px;
+ 	height: 28px;
+ 	background-color: #88b938;
+ }
+ 
+ .setMargin {
+ 	padding: 0 30px;
+ }
+ 
+ #headTitle {
+ 	padding: 20px 0;
+ 	color: #fff;
+ 	text-align: center;
+ 	font-size: 36px;
+ }
+ 
+ .tab_caps {
+ 	background-color: #292F36;
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+ 
+ .tab_caps li {
+ 	width: 50%;
+ 	padding: 20px;
+ 	text-align: center;
+ 	font-size: 28px;
+ 	color: #828282;
+ }
+ 
+ .tab_action {
+ 	color: #88B938 !important;
+ 	background-image: url(../img/tabb.png);
+ 	background-position: bottom;
+ 	background-repeat: no-repeat;
+ }
+ 
+ #main {
+ 	width: 100%;
+ 	padding: 0 16px;
+ }
+ 
+ .main_flex {
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ }
+ 
+ .main_title {
+ 	margin-left: 18px;
+ 	color: #fff;
+ 	font-size: 32px;
+ }
+ 
+ .main_signUpTime {
+ 	font-size: 24px;
+ 	color: #6b6a6a;
+ 	margin: 23px 0;
+ }
+ 
+ .main_activity_time {
+ 	border-top: #242a31 solid 2px;
+ 	color: #fff;
+ 	font-size: 28px;
+ 	padding-top: 20px;
+ 	margin-top: 15px;
+ 	background-image: url(../img/youjiantou.png);
+ 	background-position: 92% 100%;
+ 	background-repeat: no-repeat;
+ }
+ 
+ .main_bgImg {
+ 	position: relative;
+ }
+ 
+ .main_PresonNum {
+ 	width: calc(100% - 60px);
+ 	position: absolute;
+ 	height: 65px;
+ 	bottom: 0;
+ 	left: 30px;
+ 	z-index: 10;
+ 	color: #fff;
+ 	font-size: 28px;
+ 	padding-left: 10px;
+ 	line-height: 65px;
+ 	background: -webkit-linear-gradient(left, #000000 10%, rgba(255, 255, 255, 0.6));
+ 	/* Safari 5.1 - 6.0 */
+ 	background: -o-linear-gradient(right, #000000 10%, rgba(255, 255, 255, 0.6));
+ 	/* Opera 11.1 - 12.0 */
+ 	background: -moz-linear-gradient(right, #000000 10%, rgba(255, 255, 255, 0.6));
+ 	/* Firefox 3.6 - 15 */
+ 	background: linear-gradient(to right, #000000 10%, rgba(255, 255, 255, 0.6));
+ 	/* 标准的语法（必须放在最后） */
+ }
+ 
+ .main_PresonNum span {
+ 	font-size: 22px;
+ }
+ 
+ .mui-table-view .mui-media {
+ 	margin-top: 20px;
+ }
+ 
+ .mui-table-view-cell:after,
+ .mui-table-view:after,
+ .mui-table-view:before {
+ 	height: 0;
+ }
+ 
+ .main_bt {
+ 	color: #fff;
+ }
+ 
+ .mui-table-view .mui-media-object {
+ 	max-width: 118px;
+ 	height: 118px;
+ 	line-height: 118px;
+ }
+ 
+ .main_bt {
+ 	font-size: 32px;
+ 	margin-top: 10px;
+ 	display: block;
+ }
+ 
+ .mui-ellipsis {
+ 	font-size: 28px;
+ 	margin-top: 10px;
+ 	color: #6A6A6A;
+ }
+ 
+ .pobable {
+ 	position: relative;
+ }
+ 
+ .mui-table-view .mui-media,
+ .mui-table-view .mui-media-body {
+ 	background-color: #292f36;
+ }
+ 
+ .tab_cell {
+ 	display: none;
+ }
+ 
+ .actionshow {
+ 	display: block;
+ }
+ 
+ #clockSuccess {
+ 	width: 71%;
+ 	margin: 35% auto 0;
+ }

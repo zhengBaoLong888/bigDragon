@@ -1,0 +1,12 @@
+.mui-media-body{
+	width: 59%;
+}
+.rightBox{
+	position: absolute;
+	top: 34px;
+	right: 40px;
+	z-index: 10;
+	font-size: 26px;
+	color:#AAAAAA;
+	text-align: right;
+}

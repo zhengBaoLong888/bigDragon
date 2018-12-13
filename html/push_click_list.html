@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>打卡</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=750,minimum-scale=0.4,maximum-scale=2.0,user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/commen.css" />
+		<link rel="stylesheet" href="../css/pushFinish.css" />
+	</head>
+
+	<body>
+		<article class="content">
+			<p class="headTitle">今日打卡</p>
+			<!--导航-->
+			<div class="g-bd-nav">
+				<div class="m-nav f-color-green">
+					热身（0/3）
+					<div class="u-click-navLine"></div>
+				</div>
+				<div class="m-nav">
+					热身（0/3）
+					<div class="u-click-navLine f-display-none"></div>
+				</div>
+				<div class="m-nav">
+					热身（0/3）
+					<div class="u-click-navLine f-display-none"></div>
+				</div>
+				<div class="m-nav">
+					热身（0/3）
+					<div class="u-click-navLine f-display-none"></div>
+				</div>
+			</div>
+			<!--/导航-->
+			
+			<!--内容部分one-->
+			<div class="g-click-body one">
+				<!--打卡-3图项目-->
+				<div class="m-click-threeObject">
+					<!--标题-->
+					<div class="m-threeObject-title f-clear-both">
+						<p>
+							<span class="f-float-left u-click-titleText">慢跑</span>
+							<span class="f-float-right u-click-titleTextRight">个数/组数/：10/15</span>
+						</p>
+					</div>
+					<!--/标题-->
+					<!--展示图片-->
+					<div class="m-threeObject-img f-clear-both">
+						<img src="../img/bgOne_03.jpg"/>
+						<img src="../img/bgOne_03.jpg"/>
+						<img src="../img/bgOne_03.jpg"/>
+					</div>
+					<!--/展示图片-->
+					<!--描述-->
+					<div class="m-threeObject-text">
+						<p class="u-click-textTitle">描述</p>
+						<p class="u-threeObject-textDetail">西风烈，长空雁叫霜晨月。霜晨月，马蹄声碎，喇叭声咽。雄关漫道真如铁，而今迈步从头越。从头越，苍山如海...</p>
+					</div>
+					<!--/描述-->
+				</div>
+				<!--/打卡-3图项目-->
+				<!--打卡-1图项目-->
+				<div class="m-click-oneObject">
+					<!--标题-->
+					<div class="m-threeObject-title f-clear-both">
+						<p>
+							<span class="f-float-left u-click-titleText">慢跑</span>
+							<span class="f-float-right u-click-titleTextRight">个数/组数/：10/15</span>
+						</p>
+					</div>
+					<!--/标题-->
+					<!--展示图片-->
+					<div class="m-oneObject-img f-clear-both">
+						<img src="../img/img_bg2_03.png"/>
+					</div>
+					<!--/展示图片-->
+					<!--描述-->
+					<div class="m-threeObject-text">
+						<p class="u-click-textTitle">描述</p>
+						<p class="u-threeObject-textDetail">西风烈，长空雁叫霜晨月。霜晨月，马蹄声碎，喇叭声咽。雄关漫道真如铁，而今迈步从头越。从头越，苍山如海...</p>
+					</div>
+					<!--/描述-->
+				</div>
+				<!--打卡-1图项目-->
+			</div>
+			<!--/内容部分one-->
+			
+			<!--内容部分two-->
+			<div class="g-click-body two f-display-none">
+				暂无数据two
+			</div>
+			<!--/内容部分two-->
+			
+			<!--内容部分three-->
+			<div class="g-click-body three f-display-none">
+				暂无数据three
+			</div>
+			<!--/内容部分three-->
+				
+			<!--内容部分four-->
+			<div class="g-click-body four f-display-none">
+				暂无数据four
+			</div>
+			<!--/内容部分four-->
+			
+			<!--底部按钮-->
+			<div class="btn-tj">打  卡  完  成</div>
+			<!--/底部按钮-->
+		</article>
+
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/mui.js" ></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			$(".m-nav").click(function(){
+				$(this).children(".u-click-navLine").show();
+				$(this).addClass("f-color-green").siblings().removeClass("f-color-green");
+				$(this).siblings().children(".u-click-navLine").hide();
+				var index=$(this).index();
+				switch (index){
+					case 0:$(".one").show();$(".two").hide();$(".three").hide();$(".four").hide();
+						break;
+					case 1:$(".two").show();$(".one").hide();$(".three").hide();$(".four").hide();
+						break;
+					case 2:$(".three").show();$(".one").hide();$(".two").hide();$(".four").hide();
+						break;
+					case 3:$(".four").show();$(".one").hide();$(".three").hide();$(".two").hide();
+						break;
+					default:
+						break;
+				}
+			})
+		</script>
+	</body>
+
+</html>

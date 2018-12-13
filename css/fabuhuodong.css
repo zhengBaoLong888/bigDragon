@@ -1,0 +1,113 @@
+.btn-tj {
+	width: 590px;
+	height: 100px;
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	line-height: 100px;
+	margin: 40px auto 40px;
+	background-image: url(../img/btn.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.list-activity li {
+	padding: 38px 40px;
+	font-size: 28px;
+	background-color: #292F36;
+	box-shadow: 0px 0px 0px 0px rgba(32, 38, 45, 1);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.list-activity li input {
+	margin-top: 4px;
+}
+
+.list-activity li input,
+.list-activity li select {
+	width: 68%;
+	margin-left: 80px;
+	background: none;
+	border: 0;
+	font-size: 28px;
+	color: #6A6A6A;
+}
+
+select,
+textarea,
+input[type='text'] {
+	line-height: normal;
+	background: none;
+	border: 0;
+}
+
+.list-activity li span {
+	color: #F1F1F1;
+}
+
+.mandatoryMark {
+	color: #77BB03 !important;
+}
+
+.mpTop {
+	margin-top: 20px;
+}
+
+.textave,
+.upLoads {
+	padding: 20px 40px;
+	font-size: 28px;
+	background-color: #292F36;
+}
+
+.bt {
+	font-size: 28px;
+	color: #F1F1F1;
+}
+
+.bt2 {
+	font-size: 24px;
+	color: #6A6A6A;
+}
+
+.bt3 {
+	font-size: 28px;
+	color: #6A6A6A;
+	text-align: right;
+}
+
+textarea {
+	margin: 20px 0;
+	padding: 10px;
+	font-size: 24px;
+	color: #6A6A6A;
+}
+.box{
+	margin-top: 20px;
+}
+.spaceConstraints {
+	text-align: right;
+	font-size: 28px;
+	color: #6A6A6A;
+}
+
+
+.delImg {
+	position: absolute;
+	top: -10px;
+	right: -7px;
+	width: 22px;
+	height: 22px;
+	background: #000;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	line-height: 22px;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	cursor: pointer;
+}
+
