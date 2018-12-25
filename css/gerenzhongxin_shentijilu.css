@@ -26,7 +26,7 @@
 }
 
 .gridBox .indicator {
-	font-size: 72px;
+	font-size: 56px;
 	color: #F1F1F1;
 }
 
@@ -36,10 +36,8 @@
 	color: #fff;
 	font-size: 28px;
 	text-align: center;
-	position: fixed;
-	top: 1190px;
-	left: 80px;
 	line-height: 100px;
+	margin: 40px auto 40px;
 	background-image: url(../img/btn.png);
 	background-position: center;
 	background-repeat: no-repeat;

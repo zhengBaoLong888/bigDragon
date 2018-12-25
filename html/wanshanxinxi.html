@@ -145,8 +145,7 @@
 			
 			
 			//图片上传预览 
-        function previewImage(file)
-        {
+        function previewImage(file){
           var MAXWIDTH  = 90; 
           var MAXHEIGHT = 90;
           var div = document.getElementById('preview');
@@ -167,6 +166,7 @@
           }
           else{}
         }
+        
         function clacImgZoomParam( maxWidth, maxHeight, width, height ){
             var param = {top:0, left:0, width:width, height:height};
             if( width>maxWidth || height>maxHeight ){

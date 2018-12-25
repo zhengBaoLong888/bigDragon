@@ -167,8 +167,6 @@
 	background-color: #282f37;
 	display: flex;
 	justify-content: space-between;
-	padding-left: 32px;
-	padding-right: 32px;
 	line-height: 89px;
 }
 .g-click-body .m-click-threeObject,.g-click-body .m-click-oneObject{
@@ -181,6 +179,10 @@
 .g-bd-nav .m-nav{
 	font-size:28px;
 	color:#828282;
+}
+.m-nav{
+	width: 25%;
+	text-align: center;
 }
 .m-nav .u-click-navLine{
 	height: 4px;

@@ -9,9 +9,11 @@
 		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../css/mui.css" />
 		<link rel="stylesheet" type="text/css" href="../css/commen.css" />
 		<link rel="stylesheet" href="../css/globle.css" />
-
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
 		<style>
 			.btn-tj {
 				width: 590px;
@@ -26,12 +28,7 @@
 				background-repeat: no-repeat;
 			}
 			
-			.dev {
-				padding: 20px 40px;
-				background-color: #292F36;
-				max-height: 885px;
-				overflow-y: auto;
-			}
+			.dev {}
 			
 			.remark {
 				background-color: #292F36;
@@ -56,53 +53,102 @@
 			input::-webkit-input-placeholder {
 				color: #6A6A6A;
 			}
+			
+			.upLoad {
+				width: 200px;
+				margin-left: 5%;
+			}
+			
+			
+			
+			
+			
+			/*进度条样式*/
+			.mui-progressbar{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 4px;
+				z-index: 33;
+				display: none;
+			}
+			
 		</style>
 	</head>
 
 	<body>
 		<article class="content">
+			
+			
+			<p class="mui-progressbar mui-progressbar-infinite"></p><!--进度条-->
+			
+			
+			
+			
 			<p class="" id="headTitle">饮食打卡</p>
 			<div class="dev">
-				<ul class="upload-ul clearfix">
-					<li class="upload-pick">
-						<div class="webuploader-container clearfix" id="goodsUpload"></div>
-					</li>
-				</ul>
+				<div class="upLoad" id="preview">
+					<img id="imghead" class="portrait" src="../img/btn-upLoad.jpg" onclick="$('#previewImg').click();" />
+				</div>
+				<input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
 			</div>
+			
 			<div class="remark">
 				<label>备注</label><input type="text" name='' value="" placeholder="预设内容" />
 			</div>
-			<div class="btn-tj">提 交</div>
 		</article>
 		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
-		<script type="text/javascript" src="../js/diyUpload.js"></script>
-		<script type="text/javascript" src="../js/webuploader.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
-			$(function() {
-				//上传图片
-				var $tgaUpload = $('#goodsUpload').diyUpload({
-					url: '/uploadFilePath',
-					success: function(data) {
-						console.log(data);
-					},
-					error: function(err) {
-						console.log(err);
-					},
-					buttonText: '',
-					accept: {
-						title: "Images",
-						extensions: 'gif,jpg,jpeg,bmp,png'
-					},
-					thumb: {
-						width: 200,
-						height: 200,
-						quality: 100,
-						allowMagnify: true,
-						crop: true,
-						type: "image/jpeg"
+
+
+			//图片上传预览 
+			function previewImage(file) {
+				var MAXWIDTH = 200;
+				var MAXHEIGHT = 200;
+				var div = document.getElementById('preview');
+				if(file.files && file.files[0]) {
+					div.innerHTML = '<img id=imghead onclick=$("#previewImg").click()>';
+					var img = document.getElementById('imghead');
+					img.onload = function() {
+						var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+						img.width = rect.width;
+						img.height = rect.height;
+						//                 img.style.marginLeft = rect.left+'px';
+						img.style.marginTop = rect.top + 'px';
 					}
-				});
-			});
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						img.src = evt.target.result;
+					}
+					reader.readAsDataURL(file.files[0]);
+				} else {}
+			}
+
+			function clacImgZoomParam(maxWidth, maxHeight, width, height) {
+				var param = {
+					top: 0,
+					left: 0,
+					width: width,
+					height: height
+				};
+				if(width > maxWidth || height > maxHeight) {
+					rateWidth = width / maxWidth;
+					rateHeight = height / maxHeight;
+
+					if(rateWidth > rateHeight) {
+						param.width = maxWidth;
+						param.height = Math.round(height / rateWidth);
+					} else {
+						param.width = Math.round(width / rateHeight);
+						param.height = maxHeight;
+					}
+				}
+				param.left = Math.round((maxWidth - param.width) / 2);
+				param.top = Math.round((maxHeight - param.height) / 2);
+				return param;
+			}
 		</script>
 	</body>
 

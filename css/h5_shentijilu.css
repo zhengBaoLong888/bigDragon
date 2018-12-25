@@ -1,0 +1,98 @@
+#headTitle{
+	font-size: 18px;
+	padding: 10px 0;
+}
+.gridBox {
+	border-top: #292f36 solid 1px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.gridBox li {
+	text-align: center;
+	width: 33.33333%;
+	padding: 11px 0;
+	line-height: normal;
+}
+
+.gridBox li img {
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+}
+
+.gridBox .designation {
+	font-size: 12px;
+	color: #8D8D8D;
+	margin-top: 5px;
+}
+
+.gridBox .indicator {
+	font-size: 28px;
+	color: #F1F1F1;
+}
+
+.btn-tj {
+	width: 295px;
+	height: 50px;
+	color: #fff;
+	font-size: .14rem;
+	text-align: center;
+	line-height: 50px;
+	margin: 20px auto 20px;
+	background-image: url(../img/btn.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.xZt {
+	font-size: 14px;
+}
+
+.dateSelect {
+	width: 70px;
+	text-align: center;
+	padding: 6px 12px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 6px;
+	background-color: #dd524d;
+	border: 1px solid #dd524d;
+	-webkit-transition: all;
+	transition: all;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-transition-duration: .2s;
+	transition-duration: .2s;
+	margin: 10px auto 0;
+}
+
+.dateSelect:active {
+	background-color: #cf2d28;
+	border: 1px solid #cf2d28;
+}
+
+.content {
+	height: 100%;
+}
+
+.mui-btn {
+	font-size: 16px;
+	padding: 5px;
+	margin: 3px;
+}
+
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+#demo2 {
+	width: 40%;
+	margin: 0 auto;
+	font-size: 12px;
+}
