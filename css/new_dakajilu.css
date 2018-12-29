@@ -1,0 +1,76 @@
+#headTitle {
+	font-size: 0.36rem;
+	padding: 0.36rem 0;
+}
+
+.tab_caps li {
+	padding: 0.2rem;
+	font-size: 0.28rem;
+}
+
+.dateTime {
+	color: #AAAAAA;
+	font-size: 0.26rem;
+	position: absolute;
+	top: 0.30rem;
+	right: 0.30rem;
+}
+
+#tab_dataSelect {
+	margin-top: 0.2rem;
+	background-color: #292F36;
+	font-size: 0.28rem;
+	color: #fff;
+	background-image: url(../img/youjiantou.png);
+	background-position: 92% 50%;
+	background-repeat: no-repeat;
+	background-size: 0.16rem 0.30rem;
+}
+#tab_dataSelect a{
+	padding: 0.32rem 0 0.32rem 0.42rem;
+	display: block;
+	color: #fff;
+}
+.title {
+	font-size: 0.24rem !important;
+	position: absolute;
+	top: 0;
+	left: 42.5%;
+}
+
+.cancel,
+.title,
+.ensure {
+	font-size: 0.26rem;
+}
+
+.mui-table-view .mui-media {
+	margin-top: .20rem;
+}
+
+.mui-table-view .mui-media-object.mui-pull-left {
+	margin-right: 0.10rem;
+}
+
+.mui-table-view .mui-media-object {
+	max-width: 1.18rem;
+	height: 1.18rem;
+	line-height: 1.18rem;
+}
+
+.main_bt {
+	font-size: 0.32rem;
+	margin-top: .10rem;
+}
+
+.mui-ellipsis {
+	font-size: .28rem;
+	margin-top: .10rem;
+	text-indent:0;
+}
+.mui-table-view-cell:after {
+	height: 1px !important;
+}
+.pobable{
+	padding: 0.11rem 0.15rem;
+}
